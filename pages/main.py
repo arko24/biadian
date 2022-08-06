@@ -53,7 +53,12 @@ div.stButton > button:active {
 
 </style>""", unsafe_allow_html=True)
 
-st.button('Data Profil')
+if st.button('Data Profil'):
+    js = "window.location.href = 'https://biadian.herokuapp.com/profil '"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
+
 st.button('Tracking System')
 
 if st.button('SMART-Kit'):
