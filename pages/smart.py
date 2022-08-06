@@ -18,7 +18,6 @@ def add_bg_from_url():
     )
 add_bg_from_url()
 
-st.markdown("<h2 style='text-align: center; color: black;'>Log In </h2>", unsafe_allow_html=True)
 hide_menu = """
         <style>
         #MainMenu {visibility: hidden;}
