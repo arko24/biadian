@@ -33,8 +33,6 @@ st.text('Form Pengajuan Pembiayan')
 st.button('Download')
 
 st.text('Lembar Keputusan Pembiayaan')
-with open("edoc.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
 
 st.markdown("""
 <iframe src="https://drive.google.com/file/d/1g0IZe4h20idyU1leqjKLhm_0dhEd8Qxy/preview" width="400" height="300" allow="autoplay"></iframe>
