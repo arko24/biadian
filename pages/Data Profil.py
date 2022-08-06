@@ -28,7 +28,7 @@ hide_menu = """
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-image = Image.open('main.jpg')
+image = Image.open('user.jpeg')
 st.image(image, width=100,)
 
 st.text('Data AO')
