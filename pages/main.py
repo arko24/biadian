@@ -42,7 +42,13 @@ div.stButton > button:active {
 
 st.button('Data Profil')
 st.button('Tracking System')
-st.button('SMART-Kit')
+
+if st.button('SMART-Kit'):
+    js = "window.location.href = 'https://biadian.herokuapp.com/smart '"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
+
 st.button('Proposal Pembiayaan')
 st.button('Persetujuan Pembiayaan')
 st.button('eDocument')
