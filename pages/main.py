@@ -54,7 +54,7 @@ div.stButton > button:active {
 </style>""", unsafe_allow_html=True)
 
 if st.button('Data Profil'):
-    js = "window.location.href = 'https://biadian.herokuapp.com/profil '"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/profil'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
@@ -62,7 +62,7 @@ if st.button('Data Profil'):
 st.button('Tracking System')
 
 if st.button('SMART-Kit'):
-    js = "window.location.href = 'https://biadian.herokuapp.com/smart '"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/smart'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
@@ -72,7 +72,7 @@ st.button('Persetujuan Pembiayaan')
 st.button('eDocument')
 
 if st.button('Sign Out'):
-    js = "window.location.href = 'https://biadian.herokuapp.com/ '"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
