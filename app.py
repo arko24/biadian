@@ -44,7 +44,7 @@ title = st.text_input('Password')
 st.markdown("")
 
 if st.button('Log In'):
-    js = "window.location.href = 'https://biadian.herokuapp.com/page_1'"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/main'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
