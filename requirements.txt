@@ -1,0 +1,7 @@
+bokeh==2.4.3
+opencv-python==4.6.0.66
+streamlit==1.11.1
+streamlit-aggrid==0.3.2
+streamlit-authenticator==0.2.1
+streamlit-option-menu==0.3.2
+
