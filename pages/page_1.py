@@ -48,7 +48,7 @@ st.button('Persetujuan Pembiayaan')
 st.button('eDocument')
 
 if st.button('Sign Out'):
-    js = "window.location.href = 'http://localhost:8501'"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/ '"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
