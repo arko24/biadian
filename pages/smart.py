@@ -21,7 +21,7 @@ add_bg_from_url()
 hide_menu = """
         <style>
         #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;} 
+        footer,header {visibility: hidden;} 
         </style>
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
