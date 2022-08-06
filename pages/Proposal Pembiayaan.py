@@ -3,7 +3,6 @@ from bokeh.models.widgets import Div
 
 
 st.set_page_config(page_title='BCAS KONSUMER', page_icon='🖖',layout="wide")
-st.sidebar.image("/home/rumaisha/Desktop/mock/main.jpg",use_column_width=True)
 
 def add_bg_from_url():
     st.markdown(
