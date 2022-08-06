@@ -1,7 +1,7 @@
 import streamlit as st
 from bokeh.models.widgets import Div
 
-st.set_page_config(page_title='BCAS KONSUMER',layout="wide")
+st.set_page_config(page_title='BCAS KONSUMER', page_icon='🖖',layout="wide")
 
 def add_bg_from_url():
     st.markdown(
@@ -18,10 +18,6 @@ def add_bg_from_url():
     )
 add_bg_from_url()
 
-st.set_page_config(
-    initial_sidebar_state="collapsed",
-    layout="centered")
-
 hide_menu = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -29,6 +25,7 @@ hide_menu = """
         </style>
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 div.stButton > button:first-child {
