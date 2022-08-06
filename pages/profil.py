@@ -1,5 +1,6 @@
 from streamlit_echarts import st_echarts
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(page_title='BCAS KONSUMER', page_icon='🖖',layout="wide")
 
@@ -27,6 +28,8 @@ hide_menu = """
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
+image = Image.open('main.jpg')
+st.image(image, width=100,)
 
 st.text('Data AO')
 st.text('Nama    : DIAN RISDIANA')
