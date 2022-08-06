@@ -39,7 +39,7 @@ st.markdown("")
 st.markdown("")
 
 if st.button('Back'):
-    js = "window.location.href = 'http://localhost:8501/main'"  # Current tab
+    js = "window.location.href = 'https://biadian.herokuapp.com/main'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
