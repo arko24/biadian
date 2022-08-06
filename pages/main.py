@@ -1,6 +1,8 @@
 import streamlit as st
 from bokeh.models.widgets import Div
 
+st.set_page_config(page_title='BCAS KONSUMER',layout="wide")
+
 def add_bg_from_url():
     st.markdown(
         f"""
