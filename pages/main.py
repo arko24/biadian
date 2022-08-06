@@ -22,7 +22,7 @@ st.markdown("<h2 style='text-align: center; color: black;'>Log In </h2>", unsafe
 hide_menu = """
         <style>
         #MainMenu {visibility: hidden;}
-        footer,header  {visibility: hidden;}
+        footer,header {visibility: hidden;}
         </style>
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
