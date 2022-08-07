@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from bokeh.models.widgets import Div
 
 st.set_page_config(page_title='BCAS KONSUMER',layout="wide")
@@ -21,7 +22,7 @@ add_bg_from_url()
 hide_menu = """
         <style>
         #MainMenu {visibility: hidden;}
-        footer,header {visibility: hidden;}
+        footer,header {visibility: hidden;} 
         </style>
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
@@ -30,7 +31,17 @@ st.markdown("<h2 style='text-align: center; color: black;'>SMART-Kit</h2>", unsa
 st.markdown("")
 st.markdown("")
 st.text('1. Handbook Dokumen Pembiayaan')
+with open("edoc.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 
 st.markdown("""
 <iframe src="https://drive.google.com/file/d/198edwnMUkovWnEQlX51nlmEB7mlDtoxg/preview" width="400" height="300" allow="autoplay"></iframe>
 """, unsafe_allow_html=True)
+
+st.markdown("")
+st.markdown("")
+st.markdown("")
+
+st.text('2. Cek Simulasi')
+st.markdown("")
+components.iframe("https://www.bcasyariah.co.id/produk/pembiayaan/simulasi-kkb-bca-syariah",width=450, height=600, scrolling=True)
