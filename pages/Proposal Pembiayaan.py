@@ -44,3 +44,28 @@ for uploaded_file in uploaded_files:
      bytes_data = uploaded_file.read()
      st.write("filename:", uploaded_file.name)
      st.write(bytes_data)
+st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #e69138;
+    color: white;
+    height: 4em;
+    width: 10em;
+    border-radius:10px;
+    border:2px solid #000000;
+    font-size:12px;
+    font-weight: bold;
+    display: block;
+}
+
+div.stButton > button:hover {
+	background-color:#e69138;
+}
+
+div.stButton > button:active {
+	position:relative;
+	top:3px;
+}
+</style>""", unsafe_allow_html=True)
+
+st.button('Submit')
