@@ -9,3 +9,6 @@ Pillow==9.0.1
 openpyxl==3.0.10
 pandas==1.4.3
 numpy==1.23.1
+requests==2.25.1
+requests-html==0.10.0
+
