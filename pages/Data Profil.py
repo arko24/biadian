@@ -2,7 +2,7 @@ from streamlit_echarts import st_echarts
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title='BCAS KONSUMER', page_icon='🖖',layout="wide")
+st.set_page_config(page_title='BCAS KONSUMER',layout="wide")
 
 def add_bg_from_url():
     st.markdown(
