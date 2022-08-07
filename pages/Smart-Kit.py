@@ -31,9 +31,6 @@ st.markdown("<h2 style='text-align: center; color: black;'>SMART-Kit</h2>", unsa
 st.markdown("")
 st.markdown("")
 st.text('1. Handbook Dokumen Pembiayaan')
-with open("edoc.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-
 st.markdown("""
 <iframe src="https://drive.google.com/file/d/198edwnMUkovWnEQlX51nlmEB7mlDtoxg/preview" width="400" height="300" allow="autoplay"></iframe>
 """, unsafe_allow_html=True)
