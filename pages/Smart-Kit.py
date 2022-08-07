@@ -34,15 +34,3 @@ st.text('1. Handbook Dokumen Pembiayaan')
 st.markdown("""
 <iframe src="https://drive.google.com/file/d/198edwnMUkovWnEQlX51nlmEB7mlDtoxg/preview" width="400" height="300" allow="autoplay"></iframe>
 """, unsafe_allow_html=True)
-
-st.markdown("")
-st.markdown("")
-st.markdown("")
-st.markdown("")
-st.markdown("")
-
-if st.button('Back'):
-    js = "window.location.href = 'https://biadian.herokuapp.com/main'"  # Current tab
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
