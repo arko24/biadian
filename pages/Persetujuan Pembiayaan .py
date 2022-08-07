@@ -1,8 +1,9 @@
 import streamlit as st
 from bokeh.models.widgets import Div
+import pandas as pd
+import numpy as np
 
-
-st.set_page_config(page_title='BCAS KONSUMER', page_icon='🖖',layout="wide")
+st.set_page_config(page_title='BCAS KONSUMER', layout="wide")
 
 def add_bg_from_url():
     st.markdown(
@@ -27,15 +28,49 @@ hide_menu = """
         </style>
         """
 st.markdown(hide_menu, unsafe_allow_html=True)
+st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #e69138;
+    color: white;
+    height: 3em;
+    width: 17em;
+    border-radius:10px;
+    border:2px solid #000000;
+    font-size:10px;
+    font-weight: bold;
+    display: block;
+}
 
+div.stButton > button:hover {
+	background-color:#e69138;
+}
+
+div.stButton > button:active {
+	position:relative;
+	top:3px;
+}
+</style>""", unsafe_allow_html=True)
 
 st.text('Form Pengajuan Pembiayan')
-st.button('Download')
-
+st.button('Download Form')
+st.markdown("")
+st.markdown("")
+st.markdown("")
 st.text('Lembar Keputusan Pembiayaan')
-
-st.markdown("""
-<iframe src="https://drive.google.com/file/d/1g0IZe4h20idyU1leqjKLhm_0dhEd8Qxy/preview" width="400" height="300" allow="autoplay"></iframe>
-""", unsafe_allow_html=True)
-
-
+with st.expander("Cek Lembar Keputusan Pembiayaan"):
+    st.markdown("""
+    <iframe src="https://drive.google.com/file/d/1g0IZe4h20idyU1leqjKLhm_0dhEd8Qxy/preview" width="400" height="300" allow="autoplay"></iframe>
+    """, unsafe_allow_html=True)
+st.markdown("")
+st.markdown("")
+st.markdown("")
+st.text('Template Pengajuan Pembiayan')
+st.button('Download Template')
+st.markdown("")
+st.markdown("")
+st.markdown("")
+st.text('Daftar TBO')
+d = {'Emas': ['Doni : NPWP','Didi : NPWP'], 'KPR': ['Anas : KTP','Anis : NPWP'], 'KKB': ['Boni : KTP','Bustomi : KTP']}
+df = pd.DataFrame(data=d)
+st.table(df)
